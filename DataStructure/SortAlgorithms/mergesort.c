@@ -20,17 +20,17 @@ void merge(int *v, int l, int m, int r)
 
     for(int i = 0; i < n1; i++)
     {
-        L[i] = v[l + i - 1];
+        L[i] = v[l + i];
     }
     for(int j = 0; j < n2; j++)
     {
-        R[j] = v[m + j];
+        R[j] = v[m + 1 + j];
     }
     
     L[n1 + 1] = INT_MAX;
     R[n2 + 1] = INT_MAX;
 
-    int i = 0, j = m + 1;
+    int i = 0, j = 0;
 
     for(int k = l; k <= r; k++)
     {
@@ -53,7 +53,7 @@ void mergesort(int *v, int l, int r)
 {
     int m;
 
-    print(v,r);
+    print(v, r + 1);
 
     if(l < r)
     {
@@ -79,7 +79,7 @@ int main()
 
     //randomize(v,n);
 
-    print(v,n);
+    //print(v,n);
 
     mergesort(v, 0, n - 1);
 
