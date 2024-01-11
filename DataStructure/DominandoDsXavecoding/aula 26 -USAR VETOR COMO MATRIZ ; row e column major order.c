@@ -18,7 +18,7 @@ int main()
         for(int ix = 0; ix < nx; ix++)
         {
             int iyx = (iy * ny) + ix;
-            n[iyx] = count++;
+            m[iyx] = count++;
         }
     }
 

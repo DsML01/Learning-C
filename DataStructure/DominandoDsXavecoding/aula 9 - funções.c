@@ -2,7 +2,7 @@
 
 int soma (int x, int y)
 {
-    z = x + y;
+    int z = x + y;
     return z;
     //return x + y; Eh a mesma coisa
 }
