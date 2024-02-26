@@ -73,13 +73,6 @@ int is_valid_btree(btree *root, int min, int max)
     return is_valid_btree(root->left, min, root->item) && is_valid_btree(root->right, root->item, max);
 }
 
-void nice_tree(char bad_tree[])
-{
-
-
-    return;
-}
-
 int main()
 {
     char tree[1000];
