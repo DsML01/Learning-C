@@ -18,6 +18,7 @@ int particiona(int *v, int inicio, int fim)
         int aux = v[inicio];
         v[inicio] = v[fim];
         v[fim] = aux;
+
     }
     return inicio;
 }
